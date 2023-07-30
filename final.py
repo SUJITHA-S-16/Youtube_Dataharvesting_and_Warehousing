@@ -179,7 +179,7 @@ if selected == "Home":
         st.write("""":red[Statement]: Streamlit application that allows users to access
          and analyze data from multiple YouTube channels.""")
     with st.container():
-        st.write(":red[Technologies Use]: Python,MongoDB,MySQL,Streamlit,Google API Client")
+        st.write(":red[Technologies Used]: Python,MongoDB,MySQL,Streamlit,Google API Client")
     with st.container():
         st.write("---")
         left_column, right_column = st.columns(2)
