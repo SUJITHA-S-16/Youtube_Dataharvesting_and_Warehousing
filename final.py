@@ -13,7 +13,7 @@ import json
 
 #STREAMLIT PAGE CONFIGURATION
 
-icon = Image.open(r"C:\Users\MyPC\Pictures\BTS\kookie.jpeg")
+icon = Image.open("youtube.png")
 st.set_page_config(page_title="Youtube Data Harvesting and Warehousing ",
                    page_icon=":tada",
                    layout="wide",
