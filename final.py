@@ -189,7 +189,6 @@ if channel_ids:
 
 
 
-
 if selected=="Home":
     with st.container():
         st.title(":red[Project]: YouTube Data Harvesting and Warehousing:")
@@ -213,14 +212,9 @@ if selected=="Home":
 
 
 
-
-
-
 if selected=="Upload":
     st.markdown("#    ")
     st.write("### Enter YouTube Channel_ID below :")
-
-
     st.write("Hint : Goto channel's home page > Right click > View page source > Find channel_id")
     if st.button("migarte to Mongodb"):
         data = {"channel_data": channel_data, "playlist_details": playlist_details, "video_deatils": video_details,
@@ -229,6 +223,8 @@ if selected=="Upload":
         mydb = client["youtube_data"]
         mycol = mydb["channel_details"]
         mycol.insert_one(data)
+        st.table(channel_data)
+        st.table(playlists_details)
         st.success("Migrated Successfully" )
 
 
